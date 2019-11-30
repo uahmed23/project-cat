@@ -50,10 +50,28 @@ header>h1 {
 
 .theCat img {
 
-  height: 5rem;
-  width: 5rem;
+  height: 15rem;
+  width: 15rem;
   border: 1px solid rgb(63, 50, 30);
   border-width: 5px;
   border-radius: 4px;
   /* padding: 5px; */
+}
+
+.btn {
+  text-decoration: none;
+  padding-right: 100px;
+  margin: 5px;
+  color: white;
+  background-color: #453823 !important;
+
+}
+
+.btn:hover {
+  text-decoration: none;
+  padding-right: 100px;
+  margin: 5px;
+  color: white;
+  background-color: #453823 !important;
+
 }

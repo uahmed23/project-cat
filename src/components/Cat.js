@@ -1,10 +1,10 @@
 import React from "react"
 
-function Cat() {
+function Cat(props) {
 
     return (
         <div className="theCat">
-            <img src="./catpic.jpg" alt="Italian Trulli"></img>
+            <img src={props.pic} alt="cat"></img>
         </div>
     )
 

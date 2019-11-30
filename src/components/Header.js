@@ -4,10 +4,7 @@ function Header() {
 
     return (
         <header >
-
             <h1>PROJECT CAT</h1>
-
-
         </header>
     )
 
