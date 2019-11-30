@@ -31,7 +31,7 @@ class App extends Component {
   }
 
   walk(event) {
-    this.setState({ catimg: "/catpic.jpg" })
+    this.setState({ catimg: "./catpic.jpg" })
   }
 
 
