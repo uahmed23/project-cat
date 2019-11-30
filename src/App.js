@@ -1,26 +1,39 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from "react"
+import Header from "./components/Header"
+import Actions from "./components/Actions"
+import Cat from "./components/Cat"
 import './App.css';
+const $ = window.$;
+// const firebase = require("firebase")
+// require("firebase/firestore")
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends Component {
+
+  constructor() {
+
+    super()
+
+    this.state = {
+    }
+
+
+  }
+
+  //FUNCTIONS-----------------------------------------------------------------------------------------------------------
+
+
+
+  render() {
+
+    return (
+      <div className="App" >
+        <Header />
+        <Cat />
+        <Actions />
+      </div >
+    )
+  }
 }
 
 export default App;
