@@ -20,7 +20,7 @@ class App extends Component {
 
     this.feed = this.feed.bind(this)
     this.walk = this.walk.bind(this)
-
+    this.fitcat = this.fitcat.bind(this)
 
   }
 
@@ -31,14 +31,21 @@ class App extends Component {
   }
 
   walk(event) {
-    this.setState({ catimg: "./catpic.jpg" })
+    this.setState({ catimg: "./walkcat.jpg" })
+    setTimeout(this.fitcat, 3000)
   }
 
+  fitcat(event) {
+    this.setState({ catimg: "./catpic.jpg" })
+
+  }
 
   render() {
 
     return (
       <div className="App" >
+        <br></br>
+
         <Header />
         <Cat pic={this.state.catimg} />
         <Actions feed={this.feed} walk={this.walk} />
