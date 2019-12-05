@@ -55,6 +55,7 @@ header>h1 {
   border: 1px solid rgb(63, 50, 30);
   border-width: 5px;
   border-radius: 4px;
+  object-fit: cover;
   /* padding: 5px; */
 }
 
