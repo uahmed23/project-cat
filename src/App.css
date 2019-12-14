@@ -27,7 +27,7 @@
 body {
   /* background-color: #916412;
    */
-  background-color: #BAA378;
+  background-color: rgb(243, 223, 186);
 }
 
 header>h1 {
@@ -39,7 +39,13 @@ header>h1 {
   /* font-family: 'Monofett', cursive; */
   font-weight: 1500px;
   font-size: 40px;
-  color: #453823;
+  /* color: #453823; */
+  color: #ffffff;
+  /* color: #9b6001; */
+
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: #9b6001;
+
   /* text-shadow: 2px 2px #2C2416; */
 }
 
@@ -65,7 +71,7 @@ header>h1 {
   padding-right: 100px;
   margin: 5px;
   color: white;
-  background-color: #453823 !important;
+  background-color: #9b6001 !important;
 
 }
 

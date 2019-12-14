@@ -18,25 +18,37 @@ class App extends Component {
       catimg: "./catpic.jpg"
     }
 
-    this.feed = this.feed.bind(this)
+    this.fat = this.fat.bind(this)
     this.walk = this.walk.bind(this)
     this.fitcat = this.fitcat.bind(this)
+    this.eat = this.eat.bind(this)
+    this.petcat = this.petcat.bind(this)
 
   }
 
   //FUNCTIONS-----------------------------------------------------------------------------------------------------------
 
-  feed(event) {
+  eat(event) {
+    this.setState({ catimg: "./eatcat.jpg" })
+    setTimeout(this.fat, 2000)
+  }
+  fat(event) {
     this.setState({ catimg: "./fatcat.jpg" })
   }
 
   walk(event) {
     this.setState({ catimg: "./walkcat.jpg" })
-    setTimeout(this.fitcat, 3000)
+    setTimeout(this.fitcat, 2000)
   }
 
   fitcat(event) {
     this.setState({ catimg: "./catpic.jpg" })
+
+  }
+
+  petcat(event) {
+    this.setState({ catimg: "./memecatpet.jpg" })
+    setTimeout(this.fitcat, 2000)
 
   }
 
@@ -48,7 +60,7 @@ class App extends Component {
 
         <Header />
         <Cat pic={this.state.catimg} />
-        <Actions feed={this.feed} walk={this.walk} />
+        <Actions feed={this.eat} walk={this.walk} pet={this.petcat} />
       </div >
     )
   }
